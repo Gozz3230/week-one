@@ -1,0 +1,1 @@
+![Lighthouse Score](/lighthousescore.PNG)
