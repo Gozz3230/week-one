@@ -1,0 +1,23 @@
+header {
+    background-color: black;
+    border-style: solid;
+    border-color:#8B0000;
+}
+
+h1 {
+    text-align: left;
+    text-shadow: 2px 2px 2px gray;
+    text-indent: 5%;
+    font-size: 275%;
+    font-family: Century Gothic;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+}
+
+
+
+footer {
+    margin-top: 1%;
+    text-align: center;
+}
