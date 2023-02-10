@@ -41,7 +41,7 @@ let guessQuestionFour =prompt('Am I from Texas?').toLowerCase();
 
 if (guessQuestionFour === 'yes' || guessQuestionFour === 'y' || guessQuestionFour === 'yeah' || guessQuestionFour === 'yep') {
     // console.log(guessQuestionFour);
-    alert('You are wrong, I am from Montanta originally. I am just living in Texas.');
+    alert('You are wrong, I am from Montana originally. I am just living in Texas.');
 } else if(guessQuestionFour === 'no' || guessQuestionFour === 'n' || guessQuestionFour === 'nope') {
     alert('You are right! I live in Texas but am from Montana.');
 } else {
