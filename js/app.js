@@ -1,13 +1,14 @@
 "use strict"
 
+let score = 0;
 
 let userName = prompt('Welcome! What is your name?');
     console.log(userName);
 let guessQuestion = prompt(`${userName}, do you know which branch of the service I served in? If so, answer with Air Force, Coast Guard, Army, Marines, or Navy.`);
-if (guessQuestion === 'Air Force' || guessQuestion === 'Coast Guard' || guessQuestion === 'Marines' || guessQuestion === 'Navy') {
+if (guessQuestion === 'Air Force' || guessQuestion === 'air force' || guessQuestion === 'Coast Guard' || guessQuestion === 'coast guard' || guessQuestion === 'Marines' || guessQuestion === 'marines' || guessQuestion === 'Navy' || guessQuestion === 'navy') {
     console.log(guessQuestion);
     alert (`Nope, I did not serve in the ${guessQuestion}.`);  
-} else if (guessQuestion === 'Army') {
+} else if (guessQuestion === 'Army' || guessQuestion === 'army') {
     console.log(guessQuestion);
     alert ('Yep, I did serve in the Army!');
     score++;
@@ -82,7 +83,7 @@ let favoriteShow = ['stargate','dexter','the walking dead','better call saul','i
 
 for(let i = 0; i < 6; i++) {
 
-    let questionSeven = prompt('Lets play a little game. Try and guess one of my favorite TV shows.').toLowerCase();
+    let questionSeven = prompt('Lets play another game. Try and guess one of my favorite TV shows.').toLowerCase();
     console.log(questionSeven);
 
     let guessedCorrect = false;
@@ -109,4 +110,26 @@ for(let i = 0; i < 6; i++) {
 
 alert(`These are my favorite tv shows: ${favoriteShow}`);
 
-alert(`Thanks for playing ${userName}. Hope you had fun! You got ${score} right out of 8 qeustions!`);
+let myNumber = 3
+
+for(let i = 0; i < 4; i++){
+
+  let questionEight = +prompt('How many times do you think I made it to the State tournament, in wrestling, in high school?');
+  console.log(questionEight);
+  if(questionEight > myNumber){
+    alert('Sorry, that guess is too high.');
+  } else if(questionEight < myNumber){
+    alert('Sorry, that guess is too low');
+  } else if(questionEight === myNumber){
+    alert('That is right! I went 3 times and placed twice.');
+    score++;
+    break;
+  }
+  if(i === 3){
+alert('Sorry, you used your 4 chances to guess!');
+  }
+}
+
+
+
+alert(`Thanks for playing ${userName}. Hope you had fun! You got ${score} right out of 9 questions!`);
